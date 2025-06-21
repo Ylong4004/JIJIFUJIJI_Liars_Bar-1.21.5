@@ -16,7 +16,7 @@ $execute positioned $(x) $(y) $(z) run summon minecraft:interaction ~ ~0.5 ~-2 {
 #生成椅子
 scoreboard players set @a[team=liar_bar_c_table] jijifujiji_liar_bar_bullet 6
 #设置玩家的子弹数量为6
-execute as @a[team=liar_bar_c_table] run clear @s carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data=9999456,custom_data={liar_bar:1}]
+execute as @a[team=liar_bar_c_table] run clear @s carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data={floats:[9999456]},custom_data={liar_bar:1}]
 #清理玩家身上的枪
 scoreboard objectives setdisplay below_name jijifujiji_liar_bar_bullet
 #在名字上显示剩余

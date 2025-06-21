@@ -26,11 +26,11 @@ bossbar set jijifujiji_liar_bar_c_table_time name [{selector:"@a[team=liar_bar_c
 #立刻更新进度条#新的boss条
 scoreboard players enable @a[team=liar_bar_c_table,tag=c_table_playing] jijifujiji_liar_bar_c_table_click
 #让玩家可以点按钮
-data modify storage minecraft:jijifujiji_liat_bar c_table_position.select1 set value ''✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 1'
-data modify storage minecraft:jijifujiji_liat_bar c_table_position.select2 set value ''✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 2'
-data modify storage minecraft:jijifujiji_liat_bar c_table_position.select3 set value ''✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 3'
-data modify storage minecraft:jijifujiji_liat_bar c_table_position.select4 set value ''✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 4'
-data modify storage minecraft:jijifujiji_liat_bar c_table_position.select5 set value ''✘]  ",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 5'
+data modify storage minecraft:jijifujiji_liat_bar c_table_position.select1 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 1'
+data modify storage minecraft:jijifujiji_liat_bar c_table_position.select2 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 2'
+data modify storage minecraft:jijifujiji_liat_bar c_table_position.select3 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 3'
+data modify storage minecraft:jijifujiji_liat_bar c_table_position.select4 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 4'
+data modify storage minecraft:jijifujiji_liat_bar c_table_position.select5 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_c_table_click set 5'
 #设置传参数据为红色XX触发1-5
 execute if entity @a[team=liar_bar_c_table,tag=c_table_1,tag=c_table_playing] run data modify storage minecraft:jijifujiji_liat_bar c_table_position.player_turn set value 1
 execute if entity @a[team=liar_bar_c_table,tag=c_table_2,tag=c_table_playing] run data modify storage minecraft:jijifujiji_liat_bar c_table_position.player_turn set value 2

@@ -3,7 +3,7 @@
 
 
 
-execute store result score liar_bar_e_table_receive jijifujiji_liar_bar_variable run clear @s minecraft:prize_pottery_sherd[minecraft:custom_model_data=9999301] 1
+execute store result score liar_bar_e_table_receive jijifujiji_liar_bar_variable run clear @s minecraft:prize_pottery_sherd[minecraft:item_model="minecraft:jijifujiji_fantuan"] 1
 #如果扣除饭团币成功了就储存一个1  liar_bar_e_table_receive jijifujiji_liar_bar_variable
 execute if score liar_bar_e_table_receive jijifujiji_liar_bar_variable matches 0 run tellraw @s [{text:"你的饭团币不足，请拿去饭团币后重新加入！",color:"green",bold:true}]
 #没钱，没加入成功，提示重新加入

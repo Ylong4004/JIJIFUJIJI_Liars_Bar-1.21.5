@@ -14,7 +14,7 @@ execute as @a[tag=a_table_2,team=liar_bar_a_table] run ride @s mount @n[type=min
 execute as @a[tag=a_table_3,team=liar_bar_a_table] run ride @s mount @n[type=minecraft:interaction,tag=a_table_3]
 execute as @a[tag=a_table_4,team=liar_bar_a_table] run ride @s mount @n[type=minecraft:interaction,tag=a_table_4]
 #将玩家传送到座位
-execute as @a[team=liar_bar_a_table] run clear @s carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data=9999456,custom_data={liar_bar:1}]
+execute as @a[team=liar_bar_a_table] run clear @s carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data={floats:[9999456]},custom_data={liar_bar:1}]
 #清理玩家身上的枪
 kill @e[type=minecraft:item_display,tag=liar_bar_a_table_card]
 #删除实体牌和枪

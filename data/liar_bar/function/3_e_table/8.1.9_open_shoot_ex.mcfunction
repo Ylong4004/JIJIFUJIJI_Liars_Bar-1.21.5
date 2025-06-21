@@ -13,7 +13,7 @@ execute as @a[tag=e_table_2,team=liar_bar_e_table] run ride @s mount @n[type=min
 execute as @a[tag=e_table_3,team=liar_bar_e_table] run ride @s mount @n[type=minecraft:interaction,tag=e_table_3]
 execute as @a[tag=e_table_4,team=liar_bar_e_table] run ride @s mount @n[type=minecraft:interaction,tag=e_table_4]
 #将玩家传送到座位
-execute as @a[team=liar_bar_e_table] run clear @s carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data=9999456,custom_data={liar_bar:1}]
+execute as @a[team=liar_bar_e_table] run clear @s carrot_on_a_stick[custom_name=[{text:"左轮枪",italic:false,bold:true,color:"yellow"}],custom_model_data={floats:[9999456]},custom_data={liar_bar:1}]
 #清理玩家身上的枪
 execute as @a[team=liar_bar_e_table,tag=e_table__shoot] run function liar_bar:3_e_table/8.1.9.1_open_shoot_target with storage minecraft:jijifujiji_liat_bar e_table_position
 #创造枪然后保存主手物品
