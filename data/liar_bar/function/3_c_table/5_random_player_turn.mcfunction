@@ -16,7 +16,7 @@ tag @a[team=liar_bar_c_table] remove c_table__shoot
 tag @a[team=liar_bar_c_table] remove c_table_after_gun
 #清除一些标记
 title @a[team=liar_bar_c_table,tag=c_table_playing] title [{text:">>>你的回合<<<",color:"green",bold:true}]
-tellraw @a[team=liar_bar_c_table,tag=c_table_playing] [{text:"####请选择要出的手牌：",color:"yellow"}]
+tellraw @a[team=liar_bar_c_table,tag=c_table_playing] [{text:"请选择要出的手牌：",color:"yellow"}]
 #显示聊天
 execute as @a[team=liar_bar_c_table,tag=c_table_playing] at @s run playsound block.anvil.place master @s ~ ~ ~ 1 1 0
 #提示回合音效

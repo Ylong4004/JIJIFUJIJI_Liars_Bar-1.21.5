@@ -16,7 +16,7 @@ tag @a[team=liar_bar_d_table] remove d_table__shoot
 tag @a[team=liar_bar_d_table] remove d_table_after_gun
 #清除一些标记
 title @a[team=liar_bar_d_table,tag=d_table_playing] title [{text:">>>你的回合<<<",color:"green",bold:true}]
-tellraw @a[team=liar_bar_d_table,tag=d_table_playing] [{text:"####请选择要出的手牌：",color:"yellow"}]
+tellraw @a[team=liar_bar_d_table,tag=d_table_playing] [{text:"请选择要出的手牌：",color:"yellow"}]
 #显示聊天
 execute as @a[team=liar_bar_d_table,tag=d_table_playing] at @s run playsound block.anvil.place master @s ~ ~ ~ 1 1 0
 #提示回合音效
@@ -30,7 +30,7 @@ data modify storage minecraft:jijifujiji_liat_bar d_table_position.select1 set v
 data modify storage minecraft:jijifujiji_liat_bar d_table_position.select2 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 2'
 data modify storage minecraft:jijifujiji_liat_bar d_table_position.select3 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 3'
 data modify storage minecraft:jijifujiji_liat_bar d_table_position.select4 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 4'
-data modify storage minecraft:jijifujiji_liat_bar d_table_position.select5 set value '✘]  ",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 5'
+data modify storage minecraft:jijifujiji_liat_bar d_table_position.select5 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_d_table_click set 5'
 #设置传参数据为红色XX触发1-5
 execute if entity @a[team=liar_bar_d_table,tag=d_table_1,tag=d_table_playing] run data modify storage minecraft:jijifujiji_liat_bar d_table_position.player_turn set value 1
 execute if entity @a[team=liar_bar_d_table,tag=d_table_2,tag=d_table_playing] run data modify storage minecraft:jijifujiji_liat_bar d_table_position.player_turn set value 2

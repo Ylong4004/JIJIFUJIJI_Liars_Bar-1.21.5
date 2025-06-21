@@ -13,7 +13,7 @@ scoreboard players set liar_bar_e_table_time jijifujiji_liar_bar_variable 75
 scoreboard players set liar_bar_e_table_temp jijifujiji_liar_bar_variable 30
 #临时变量和当前时间
 title @a[team=liar_bar_e_table,tag=e_table_playing] title [{text:">>>你的回合<<<",color:"green",bold:true}]
-tellraw @a[team=liar_bar_e_table,tag=e_table_playing] [{text:"####请选择要出的手牌：",color:"yellow"}]
+tellraw @a[team=liar_bar_e_table,tag=e_table_playing] [{text:"请选择要出的手牌：",color:"yellow"}]
 #显示聊天
 execute as @a[team=liar_bar_e_table,tag=e_table_playing] at @s run playsound block.anvil.place master @s ~ ~ ~ 1 1 0
 #提示回合音效

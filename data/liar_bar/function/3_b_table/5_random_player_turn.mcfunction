@@ -14,7 +14,7 @@ tag @a[team=liar_bar_b_table] remove b_table__shoot
 tag @a[team=liar_bar_b_table] remove b_table_after_gun
 #清除一些标记
 title @a[team=liar_bar_b_table,tag=b_table_playing] title [{text:">>>你的回合<<<",color:"green",bold:true}]
-tellraw @a[team=liar_bar_b_table,tag=b_table_playing] [{text:"####请选择要出的手牌：",color:"yellow"}]
+tellraw @a[team=liar_bar_b_table,tag=b_table_playing] [{text:"请选择要出的手牌：",color:"yellow"}]
 #显示聊天
 scoreboard objectives setdisplay below_name jijifujiji_liar_bar_bullet
 #在名字上显示剩余子弹
@@ -30,7 +30,7 @@ data modify storage minecraft:jijifujiji_liat_bar b_table_position.select1 set v
 data modify storage minecraft:jijifujiji_liat_bar b_table_position.select2 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 2'
 data modify storage minecraft:jijifujiji_liat_bar b_table_position.select3 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 3'
 data modify storage minecraft:jijifujiji_liat_bar b_table_position.select4 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 4'
-data modify storage minecraft:jijifujiji_liat_bar b_table_position.select5 set value '✘]  ",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 5'
+data modify storage minecraft:jijifujiji_liat_bar b_table_position.select5 set value '✘]",color:"red",click_event:{action:"run_command",command:"/trigger jijifujiji_liar_bar_b_table_click set 5'
 #设置传参数据为红色XX触发1-5
 execute if entity @a[team=liar_bar_b_table,tag=b_table_1,tag=b_table_playing] run data modify storage minecraft:jijifujiji_liat_bar b_table_position.player_turn set value 1
 execute if entity @a[team=liar_bar_b_table,tag=b_table_2,tag=b_table_playing] run data modify storage minecraft:jijifujiji_liat_bar b_table_position.player_turn set value 2
